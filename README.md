@@ -1,6 +1,3 @@
-title: "Nomin Khurelchuluun"
-theme: minima
-
 ---
 title: "Nomin Khurelchuluun | Data Science Portfolio"
 ---
