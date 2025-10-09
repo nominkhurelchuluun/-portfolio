@@ -1,4 +1,4 @@
-title: "Nomin Khurelchuluun Portfolio"
+title: "Nomin Khurelchuluun"
 theme: minima
 
 ---
