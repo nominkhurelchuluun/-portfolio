@@ -44,7 +44,7 @@ I am a data science undergraduate passionate about machine learning, data analys
 
 ## 📫 Contact
 
-- [LinkedIn](https://www.linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- [LinkedIn](https://www.linkedin.com/in/nomink_)
+- Email: nk3126@columbia.edu
 
 ---
