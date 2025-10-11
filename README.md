@@ -7,21 +7,35 @@ layout: default
 
 **Undergraduate Student | Aspiring Data Scientist**
 
-Welcome to my portfolio website! Here, I showcase my data science projects, skills, and interests.
+Welcome to my portfolio website! Here, I showcase my data science projects, research, and professional experience.
 
 ---
 
 ## 🧑‍💻 About Me
 
-I am a data science undergraduate, graduating in May 2026, passionate about machine learning, data analysis, and
-visualization. My interests include predictive modeling, statistical analysis, and building insightful dashboards.
+I am a Data Science undergraduate at Columbia University, graduating in May 2026.  
+My work focuses on **machine learning, data visualization, and predictive analytics**.  
+I’m passionate about uncovering insights through data and applying them to solve real-world challenges — especially in areas of sustainable development, operations, and strategy.
+
+Outside academics, I’m interested in consulting, impact investing, and using data for global problem-solving.
 
 ---
 
 <style>
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        background: #f8f9fa;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    h1, h2 {
+        color: #0a2540;
+    }
+
     .tab {
         overflow: hidden;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 2px solid #ccc;
         margin-top: 2em;
     }
 
@@ -34,121 +48,156 @@ visualization. My interests include predictive modeling, statistical analysis, a
         padding: 10px 20px;
         transition: 0.3s;
         font-size: 17px;
+        color: #0a2540;
+        font-weight: bold;
+    }
+
+    .tab button:hover {
+        background-color: #ddd;
     }
 
     .tab button.active {
-        background-color: #ddd;
+        background-color: #0a2540;
+        color: white;
     }
 
     .tabcontent {
         display: none;
-        padding: 12px 0;
+        padding: 15px 0;
+        border-top: none;
+    }
+
+    ul {
+        margin-left: 1.5em;
+    }
+
+    a {
+        color: #1d4ed8;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    iframe {
+        border: 1px solid #ccc;
+        border-radius: 8px;
     }
 </style>
 
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Projects')" id="defaultOpen">Projects</button>
     <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
-    <button class="tablinks" onclick="openTab(event, 'Experience')">Experience/Research</button>
+    <button class="tablinks" onclick="openTab(event, 'Experience')">Experience / Research</button>
+    <button class="tablinks" onclick="openTab(event, 'CV')">CV</button>
 </div>
 
 <div id="Projects" class="tabcontent">
     <h2>Projects</h2>
     <ul>
-        <li><b>Deep Learning Based Recommendation Engine, /b> – September 2025 - Present
-                <br>* Building a personalized deep learning recommender system using neural collaborative filtering on
-                the MovieLens dataset, integrating user and item embedding. Currently focusing on model training and
-                reporting improvements compared to baseline collaborative filtering approaches.
+        <li>
+            <b>Deep Learning-Based Recommendation Engine</b> – <i>Sept 2025 - Present</i><br>
+            Building a personalized deep learning recommender system using neural collaborative filtering on
+            the MovieLens dataset. Integrating user-item embeddings and comparing model performance against baseline
+            collaborative filtering approaches.
         </li>
-        <li><b>Database for Spotify, /b> – February 2024 - April 2024
-                <br>* Built a SQL database system for podcast aggregation, ensuring smooth integration with Spotify and
-                enhancing user experience through detailed modeling and design, Developed an intuitive interface for
-                exploring podcasts by genre, popularity, and topics, supported by a recommendation engine that adapts
-                suggestions based on user preferences, technologies used, and your contributions.
+        <br>
+        <li>
+            <b>Podcast Aggregation Database</b> – <i>Feb 2024 - Apr 2024</i><br>
+            Built a SQL database for podcast aggregation with an interface for discovering podcasts by genre,
+            popularity, and topic. Designed an ER model and implemented a recommendation engine for personalized discovery.
+        </li>
+        <br>
+        <li>
+            <b>Market Feasibility Analysis (STATA)</b> – <i>Mar 2023 - Jun 2023</i><br>
+            Collected 100+ surveys and analyzed suburban mall data using STATA. Used KPI dashboards to reduce project launch costs by 15%.
+        </li>
+        <br>
+        <li>
+            <b>Java Anagram Finder</b> – <i>Dec 2023</i><br>
+            Developed a Java program that finds all anagrams of a given word using BSTMap, AVLTreeMap, and MyHashMap. Benchmarked runtime across data structures.
+        </li>
     </ul>
 </div>
 
 <div id="Education" class="tabcontent">
     <h2>Education</h2>
     <ul>
-        <li>B.A. in Data Science, Columbia University, May 2026</li>
-        <li>Relevant Courses: Neural Networks & Deep Learning, AI, Statistical Inference, Probability Theory, Databases.
+        <li><b>B.A. in Data Science</b> – Columbia University, Expected May 2026</li>
+        <li><b>A.A. in Liberal Arts – Business Transfer</b> – College of San Mateo</li>
+        <li>Relevant Coursework: Machine Learning, Databases, Statistical Modeling, Algorithms, Probability Theory</li>
+    </ul>
+</div>
+
+<div id="Experience" class="tabcontent">
+    <h2>Experience & Research</h2>
+
+    <ul>
+        <li>
+            <b>Researcher – Quantitative Analysis of Reforestation and Grazing Policies in Mongolia</b> – <i>Aug 2025 - Present</i><br>
+            Collaborating with Columbia University faculty to predict vegetation recovery under reforestation and livestock reduction policies
+            using NDVI, livestock census, and climate data. Applying Bayesian decision models to simulate sustainable outcomes.
+        </li>
+        <br>
+        <li>
+            <b>Student Operations Assistant</b> – Columbia University, <i>Nov 2024 - Present</i><br>
+            Analyzing 30,500+ housing work-order datasets using Power BI and Python. Built an independent data project identifying overlap patterns
+            to optimize vendor negotiations. Managed housing project data for 38 campus buildings.
+        </li>
+        <br>
+        <li>
+            <b>Operations Assistant – DSV Air & Sea US</b> – <i>Jul 2022 - Jul 2023</i><br>
+            Created data-driven Excel dashboards improving billing accuracy and operational KPIs. Reduced invoice processing time by 40% and overdue
+            invoices by 12%. Managed invoice portal with CargoWise One for luxury retail and EV clients.
         </li>
     </ul>
 </div>
 
-<div id="Experience/Research" class="tabcontent">
-    <h2>Experience</h2>
-    <ul>
-        <li><b>Quantitative Analysis of Reforestation and Grazing Policies in Mongolia, Researcher/b> – August 2025 -
-                Present
-                <br>* Collaborating with a Columbia University faculty member to predict vegetation recovery under
-                reforestation and livestock reduction policies using quantitative NDVI, livestock census, climate, and
-                land-use data.
-                * Building Bayesian decision models and machine learning simulations to forecast policy outcomes and
-                guide sustainable land management.
-        </li>
-        <li><b>Student Operations Assistant, Columbia University</b> – November 2024 - Present
-            <br>* Analyzing large housing work-order datasets which includes ~30500 WOs using PowerBI and Python;
-            completed independent data science project to identify patterns and overlaps, and proposed solutions to
-            improve student housing by anticipating future needs, regarding vendors negotiations.
-            * Data managing on projects for field operations across 38 Columbia Housing buildings, improving processes
-            and reporting to enhance student experiences; managed conference project data full-time in summer and
-            part-time for academic semesters.
-        </li>
-        <li><b>Supply Chain Assistant/Operations Support (Full-time), DSV Air & Sea US</b> – July 2022 - July 2023
-            <br>* Served as a key liaison between internal teams and external stakeholders, ensuring objective alignment
-            and monitoring KPIs for a luxury electric car client and the branch manager, achieving a 12% quarterly
-            increase in invoice processing efficiency.
-            * Managed the invoice portal with precision, tracking outstanding over 100 invoices per day on CargoWise
-            One, facilitating seamless communication with LLP, and reducing overdue payments through effective follow-up
-            strategies.
-            * Created visually engaging daily performance reports with Business Excel 1.0 and PowerBI, leveraging
-            PivotTables and formulas to provide actionable insights to the internal Accounting Team and trained new
-            employees within the team.
-        </li>
-    </ul>
+<div id="CV" class="tabcontent">
+    <h2>Curriculum Vitae</h2>
+    <p>You can view or download my full CV below:</p>
+    <iframe src="assets/resume.pdf" width="100%" height="600px"></iframe>
 </div>
 
 <script>
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
+function openTab(evt, tabName) {
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("defaultOpen").click();
-    });
+    let tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("defaultOpen").click();
+});
 </script>
 
 ---
 
 ## 🛠️ Skills
 
-- **Languages:** Machine Learning, Python, SQL, PowerBI, Business Excel, Key Point Indicator Management, Payroll, Supply
-Chain
-- **Libraries:** Pandas, NumPy, scikit-learn, matplotlib, seaborn, TensorFlow, PyTorch
-- **Tools:** Jupyter Notebook
+- **Languages:** Python, SQL, R, Java  
+- **Libraries:** Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Matplotlib, Seaborn  
+- **Tools:** Power BI, Excel, Jupyter Notebook, CargoWise One  
+- **Specialties:** Data Cleaning, Machine Learning, Data Visualization, Statistical Analysis
 
 ---
 
 ## 📄 Resume
-
-[Download my Resume](resume.pdf)
+[Download Resume (PDF)](assets/resume.pdf)
 
 ---
 
 ## 📫 Contact
-
-- [LinkedIn](https://www.linkedin.com/in/nomink_)
-- Email: nk3126@columbia.edu
+- 📧 Email: [nk3126@columbia.edu](mailto:nk3126@columbia.edu)  
+- 💼 [LinkedIn](https://linkedin.com/in/nomink)
 
 ---
+
+© 2025 Nomin Khurelchuluun | Built with 💻 & Data
