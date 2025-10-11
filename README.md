@@ -21,70 +21,68 @@ Outside academics, I’m interested in consulting, impact investing, and using d
 
 ---
 
-<style>
-    body {
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-        background: #f8f9fa;
-        color: #333;
-        line-height: 1.6;
-    }
-
-    h1, h2 {
-        color: #0a2540;
-    }
-
-    .tab {
-        overflow: hidden;
-        border-bottom: 2px solid #ccc;
-        margin-top: 2em;
-    }
-
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 10px 20px;
-        transition: 0.3s;
-        font-size: 17px;
-        color: #0a2540;
-        font-weight: bold;
-    }
-
-    .tab button:hover {
-        background-color: #ddd;
-    }
-
-    .tab button.active {
-        background-color: #0a2540;
-        color: white;
-    }
-
-    .tabcontent {
-        display: none;
-        padding: 15px 0;
-        border-top: none;
-    }
-
-    ul {
-        margin-left: 1.5em;
-    }
-
-    a {
-        color: #1d4ed8;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    iframe {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #0a2540;
+        }
+        .tab {
+            overflow: hidden;
+            border-bottom: 2px solid #ccc;
+            margin-top: 2em;
+        }
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: 0.3s;
+            font-size: 17px;
+            color: #0a2540;
+            font-weight: bold;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #0a2540;
+            color: white;
+        }
+        .tabcontent {
+            display: none;
+            padding: 15px 0;
+            border-top: none;
+        }
+        ul {
+            margin-left: 1.5em;
+        }
+        a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- your main content goes here -->
+</body>
+</html>
 
 <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Projects')" id="defaultOpen">Projects</button>
