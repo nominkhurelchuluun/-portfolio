@@ -178,24 +178,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ---
 
-## 🛠️ Skills
+<section id="skills">
+  <h2>🛠️ Skills</h2>
+  <ul>
+    <li><strong>Languages:</strong> Python, SQL, R, Java</li>
+    <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Matplotlib, Seaborn</li>
+    <li><strong>Tools:</strong> Power BI, Excel, Jupyter Notebook, CargoWise One</li>
+    <li><strong>Specialties:</strong> Data Cleaning, Machine Learning, Data Visualization, Statistical Analysis</li>
+  </ul>
+</section>
 
-- **Languages:** Python, SQL, R, Java  
-- **Libraries:** Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch, Matplotlib, Seaborn  
-- **Tools:** Power BI, Excel, Jupyter Notebook, CargoWise One  
-- **Specialties:** Data Cleaning, Machine Learning, Data Visualization, Statistical Analysis
+<hr>
 
----
+<section id="resume">
+  <h2>📄 Resume</h2>
+  <p><a href="assets/Resume_Nomin_Khurelchuluun.pdf" target="_blank">Download Resume (PDF)</a></p>
+</section>
 
-## 📄 Resume
-[Download Resume (PDF)](assets/resume.pdf)
+<hr>
 
----
+<section id="contact">
+  <h2>📫 Contact</h2>
+  <ul>
+    <li>📧 <a href="mailto:nk3126@columbia.edu">nk3126@columbia.edu</a></li>
+    <li>💼 <a href="https://linkedin.com/in/nomink" target="_blank">LinkedIn</a></li>
+  </ul>
+</section>
 
-## 📫 Contact
-- 📧 Email: [nk3126@columbia.edu](mailto:nk3126@columbia.edu)  
-- 💼 [LinkedIn](https://linkedin.com/in/nomink)
-
----
-
-© 2025 Nomin Khurelchuluun | Built with 💻 & Data
+<footer style="text-align:center; margin-top:2em; color:#555;">
+  © 2025 Nomin Khurelchuluun | Built with 💻 & Data
+</footer>
