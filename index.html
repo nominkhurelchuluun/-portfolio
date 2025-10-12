@@ -43,7 +43,6 @@
     .hero {
       position: relative;
       width: 100vw;
-      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -117,7 +116,10 @@
       max-width: 500px;
       color: #f5f5f5;
     }
-
+    .hero-image {
+    flex: 0 1 220px; /* Matches your profile pic width */
+    text-align: center;
+    }
     .profile-pic {
       width: 220px;
       height: 220px;
@@ -231,14 +233,14 @@
 <section class="hero" id="about">
   <div class="hero-container">
     <div class="hero-text">
-      <h1>Hi, I’m Nomin Khurelchuluun</h1>
+      <h1>Nomin Khurelchuluun</h1>
       <h3>Undergraduate Student | Class of 2026</h3>
       <p>
         Welcome to my portfolio! I’m passionate about using data to understand problems and create solutions. Explore my projects, experience, and journey—I’m open to contributing in any field where I can make an impact. I am a Data Science undergraduate at Columbia University, graduating in May 2026. My work focuses on <strong>machine learning, data visualization, and predictive analytics</strong>. I enjoy uncovering insights through data and applying them to solve real-world challenges — especially in sustainable development, operations, and strategy.
       </p>
     </div>
     <div class="hero-image">
-      <img src="profile.png" alt="Nomin Khurelchuluun" class="profile-pic">
+      <img src="Zurag-ai-image.png" alt="Nomin Khurelchuluun" class="profile-pic">
     </div>
   </div>
 </section>
