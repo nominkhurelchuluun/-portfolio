@@ -43,13 +43,13 @@
     .hero {
       position: relative;
       width: 100vw;                /* full viewport width */
-      min-height: 400px;
+      max-width: none;
       display: flex;
       align-items: center;
       justify-content: space-between;
       color: white;
       overflow: hidden;
-      padding: 0 50px;
+      padding: 60px 20px;
       box-sizing: border-box;
     }
 
@@ -346,12 +346,16 @@
       <code>p₀ = 0.05</code> (control) and <code>p₁ = 0.1</code> (treatment).</p>
       <p><strong>Metric:</strong> Defined each user's <strong>Click-Through Rate (CTR)</strong> as:</p>
       <p>The click-through rate (CTR) for user \( i \) is defined as:</p>
-      <p>\\[ \text{CTR}_i = \frac{\sum_j C_{ij}}{\sum_j V_{ij}} \\]</p>
+      <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 8px; overflow-x: auto;">
+      CTR_i = Σ_j C_ij / Σ_j V_ij
+      </pre>
       <p>Computed CTRs for every user and stored them in a 1D NumPy array <code>CTR_array</code>.</p>
       <p><strong>Statistical Analysis:</strong> Conducted a two-sample <em>t-test</em> under equal variance assumption to test:</p>
       <p>We test the following hypotheses:</p>
-      <p>\\( H_0: \text{CTR}_{\text{treatment}} = \text{CTR}_{\text{control}} \\)</p>
-      <p>\\( H_1: \text{CTR}_{\text{treatment}} \neq \text{CTR}_{\text{control}} \\)</p>
+      <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 8px; overflow-x: auto;">
+      H₀: CTR_treatment = CTR_control
+      H₁: CTR_treatment ≠ CTR_control
+      </pre>
       <p>Implemented a <code>compute_t_statistics()</code> function to calculate the t-value and p-value using the <code>scipy.stats.t</code> distribution.</p>
       <p><strong>Key Insight:</strong> The treatment group (new UI design) showed a statistically significant improvement in CTR (p < 0.05), demonstrating the effectiveness of A/B testing in decision-making.</p>
     </div>
