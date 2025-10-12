@@ -233,7 +233,43 @@
       <strong>research</strong>, and <strong>professional experience</strong>.
     </p>
   </section>
+    <!-- #tabs not moving -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation Example</title>
 
+  <style>
+    header {
+      position: fixed; /* Keeps it fixed on top */
+      top: 0;
+      width: 100%;
+      background-color: white;
+      z-index: 1000;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007BFF; /* Optional hover color */
+    }
+
+    body {
+      margin: 0;
+      padding-top: 60px; /* Prevents content from being hidden under the header */
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head
   <header>
     <nav>
       <a href="#about">About</a>
