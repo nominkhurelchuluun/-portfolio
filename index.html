@@ -42,40 +42,39 @@
       color: #ffeb3b;
     }
 
-    /* HERO SECTION WITH BACKGROUND */
-    .hero {
-      position: relative;
-      text-align: center;
-      color: white;
-      padding: 100px 20px;
-      overflow: hidden;
-    }
+    //* HERO SECTION WITH BACKGROUND */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 160px 20px; /* more vertical spacing for centered look */
+  overflow: hidden;
+  width: 100vw; /* ensures full width across screen */
+  box-sizing: border-box;
+}
 
-    .hero::before {
-      content: "";
-      background-image: url("columbia-bg.jpg");
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: blur(6px) brightness(70%);
-      z-index: -2;
-    }
+.hero::before {
+  content: "";
+  background-image: url("columbia-bg.jpg"); /* make sure this file is in same folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(8px) brightness(65%); /* stronger blur, slightly darker */
+  transform: scale(1.1); /* fixes blur edges */
+  z-index: -2;
+}
 
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: -1;
-    }
-    .profile-pic {
+.hero::after {
+  content: "";
+  position: absolute
+/* above; edited bg into blur and full width of the page */
+  
+  .profile-pic {
   width: 150px;
   border-radius: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -218,7 +217,6 @@
     .download-btn:hover {
       background-color: #005fa3;
     }
-
   </style>
     <!-- #tabs not moving -->
 <html lang="en">
@@ -240,14 +238,10 @@
     }
 
     nav a {
-      margin: 0 15px;
+      margin: 0 25px;
       text-decoration: none;
-      color: black;
+      color: blue;
       font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #007BFF; /* Optional hover color */
     }
 
     body {
@@ -256,7 +250,6 @@
       font-family: Arial, sans-serif;
     }
   </style>
-</head
 </head>
 <body>
 
