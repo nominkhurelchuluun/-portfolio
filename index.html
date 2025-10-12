@@ -20,35 +20,151 @@
       background-color: #fff;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
+    /* HEADER / NAVBAR */
+    header {
+      background-color: #0a2540;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
 
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* HERO SECTION WITH BACKGROUND */
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+      padding: 100px 20px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      background-image: url("columbia-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(6px) brightness(70%);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
     .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #007acc;
-    }
+  width: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+  }
+  
+  .hero h1 {
+    transition: color 0.3s;
+  }
+  
+  .hero h1:hover {
+    color: #0055A2; /* Columbia blue shade */
+  }
 
-    h1 {
-      font-size: 28px;
-      color: #007acc;
-      margin: 10px 0 5px;
-    }
-
-    h3 {
+    .hero h3 {
       font-weight: normal;
-      color: #444;
+      color: #e0e0e0;
       margin: 0 0 15px;
     }
 
-    p {
-      max-width: 600px;
+    .hero p {
+      max-width: 700px;
       margin: 0 auto;
       line-height: 1.6;
       font-size: 16px;
+      color: #f2f2f2;
+    }
+    /* SECTIONS */
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
+    h2 {
+      color: #0a2540;
+      border-bottom: 2px solid #0a2540;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+      margin-top: 15px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0a2540;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      margin-top: 15px;
+    }
+
+    .download-btn:hover {
+      background-color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a2540;
+      color: white;
+      margin-top: 50px;
+    }
     /* NAVIGATION TABS */
     .tab {
       overflow: hidden;
@@ -192,6 +308,51 @@
         Managed the invoice portal with precision, tracking outstanding over 100 invoices per day on CargoWise One, facilitating seamless communication with LLP, and reducing overdue payments through effective follow-up strategies. 
       </li>
     </ul>
+  </section>
+
+    <section id="projects">
+    <h2>📊 Data Science Projects</h2>
+    <p>Here are some of the analytical projects I’ve worked on, combining Python, data visualization, and statistical modeling.</p>
+
+    <div class="project">
+      <h3>1️⃣ Ordinary Least Squares vs Weighted Least Squares</h3>
+      <p><strong>Overview:</strong> Analyzed earthquake data from <code>earthquake_query.csv</code> to identify regions with the highest average magnitudes using Python (Pandas, NumPy).</p>
+      <p><strong>Analysis:</strong> Cleaned missing data, computed top-5 regions with the largest mean magnitudes, and compared estimation accuracy between OLS and WLS regression models.</p>
+      <p><strong>Key Insight:</strong> Weighted Least Squares provided more reliable estimates for regions with high variance in earthquake magnitudes, improving model fit and stability.</p>
+    </div>
+
+    <div class="project">
+      <h3>2️⃣ Air Quality and Mental Health in Oregon</h3>
+      <p><strong>Overview:</strong> Collected and analyzed annual PM2.5 air quality data from the EPA’s AQS API (2009–2022) for five U.S. states, focusing on Oregon.</p>
+      <p><strong>Analysis:</strong> Modeled the relationship between <code>mean_avg</code> PM2.5 levels and mental health indicators to test whether air pollution has a negative psychological impact.</p>
+      <p><strong>Approach:</strong> Used visualization and regression to examine the link, avoiding strong distributional assumptions. Also designed an optimization-based objective function to help parents balance children’s outdoor playtime and air quality exposure in NYC.</p>
+      <p><strong>Key Insight:</strong> Found a weak but consistent negative association between poor air quality and mental well-being — suggesting environmental factors significantly affect health outcomes.</p>
+    </div>
+
+    <div class="project">
+      <h3>3️⃣ How the News Talks About Bitcoin</h3>
+      <p><strong>Overview:</strong> Examined how <em>The Guardian</em> covered Bitcoin between May 2020–May 2021, and compared sentiment trends with Bitcoin price fluctuations.</p>
+      <p><strong>Analysis:</strong> Processed weekly article frequencies for keywords and sentiment indicators (<code>positive_title</code>, <code>negative_title</code>), created a dataset <code>X</code> with keyword counts, and sorted features by popularity.</p>
+      <p><strong>Modeling:</strong> Developed predictive models using textual features, comparing against a naive baseline model to measure improvement in predictive accuracy.</p>
+      <p><strong>Key Insight:</strong> Positive sentiment coverage tended to precede short-term price increases, suggesting media influence plays a measurable role in cryptocurrency dynamics.</p>
+    </div>
+        <div class="project">
+      <h3>4️⃣ Which Ad Will Be Better? (A/B Testing Simulation)</h3>
+      <p><strong>Overview:</strong> Conducted an A/B testing simulation for a web-based service to measure how a redesigned user interface (UI) affects engagement through click-through rates (CTR).</p>
+      <p><strong>Data Generation:</strong> Simulated user activity data for <code>n = 1000</code> users over 14 days, dividing them into treatment and control groups using NumPy arrays. 
+      Generated <code>views</code> and <code>clicks</code> matrices where clicks followed a binomial distribution conditioned on user assignment, with probabilities 
+      <code>p₀ = 0.05</code> (control) and <code>p₁ = 0.1</code> (treatment).</p>
+      <p><strong>Metric:</strong> Defined each user's <strong>Click-Through Rate (CTR)</strong> as:</p>
+      <pre><code>CTRᵢ = ΣⱼCᵢⱼ / ΣⱼVᵢⱼ</code></pre>
+      <p>Computed CTRs for every user and stored them in a 1D NumPy array <code>CTR_array</code>.</p>
+      <p><strong>Statistical Analysis:</strong> Conducted a two-sample <em>t-test</em> under equal variance assumption to test:</p>
+      <pre><code>
+H₀: CTRₜᵣₑₐₜₘₑₙₜ = CTRcₒₙₜᵣₒₗ  
+H₁: CTRₜᵣₑₐₜₘₑₙₜ ≠ CTRcₒₙₜᵣₒₗ
+      </code></pre>
+      <p>Implemented a <code>compute_t_statistics()</code> function to calculate the t-value and p-value using the <code>scipy.stats.t</code> distribution.</p>
+      <p><strong>Key Insight:</strong> The treatment group (new UI design) showed a statistically significant improvement in CTR (p < 0.05), demonstrating the effectiveness of A/B testing in decision-making.</p>
+    </div>
   </section>
 
   <section id="skills">
