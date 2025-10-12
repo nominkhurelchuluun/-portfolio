@@ -45,13 +45,12 @@
     .hero {
       position: relative;
       width: 100vw;                /* full viewport width */
-      height: 50vh;
       display: flex;
       align-items: center;
       justify-content: space-between;
       color: white;
       overflow: hidden;
-      padding: 0px 80px;
+      padding: 80px 80px;
       box-sizing: border-box;
     }
 
@@ -64,7 +63,7 @@
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100%;
+      height: 50vh;
       filter: blur(0.5px) brightness(75%);
       opacity: 0.6; 
       transform: scale(1.1);
@@ -77,7 +76,7 @@
       top: 0;
       left: 0;
       width: 100vw;
-      height: 100%;
+      height: 50vh;
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
     }
@@ -88,7 +87,7 @@
       justify-content: space-between;
       max-width: 1300px;
       width: 100%;
-      height: 100%;
+      height: 50vh;
       gap: 60px;
     }
 
@@ -120,10 +119,14 @@
       line-height: 1.6;
       max-width: 500px;
       color: #000000;
+      padding-right: 20px;
     }
     .hero-image {
-    flex: 0 1 220px; /* Matches your profile pic width */
-    text-align: right;
+      flex: 0 0 220px;       /* fixed box for the image (won't grow) */
+      display: flex;         /* use flex to control image alignment */
+      align-items: center;   /* vertically center the image inside this column */
+      justify-content: flex-end; /* push image to the far right of the column */
+      height: 100%;
     }
     .profile-pic {
       width: 190px;
@@ -199,22 +202,29 @@
       margin-top: 50px;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-
-      .hero-text h1 {
-        font-size: 2.3em;
-      }
-
-      .profile-pic {
-        width: 160px;
-        height: 160px;
-      }
+    /* RESPONSIVE: stack on small screens */
+    @media (max-width: 900px) {
+    .hero {
+      height: auto;           /* let content define height on mobile */
+      padding: 30px 16px;
     }
+    .hero-content {
+      flex-direction: column-reverse; /* image below text */
+      align-items: right;
+      justify-content: space-between;
+      height: auto;
+      gap: 20px;
+    }
+    .hero-image {
+      justify-content: center;
+      flex: 0 0 auto;
+      height: auto;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 200px;
+    }
+
   </style>
 </head>
 
