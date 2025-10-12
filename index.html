@@ -207,9 +207,10 @@
   <header>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#mini projects">Mini Projects</a>
       <a href="#skills">Skills</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
@@ -228,18 +229,18 @@
           experience, and journey below.
         </p>
       </div>
-      <img src="profile.jpg" alt="Nomin Khurelchuluun" class="profile-pic">
+      <img src="portfolio/profile.jpg" alt="Nomin Khurelchuluun" class="profile-pic">
     </div>
   </section>
 
   <header>
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+     <a href="#about">About</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#mini projects">Mini Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#skills">Data Science Projects</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -255,29 +256,6 @@
     <p>
       Outside academics, I’m interested in consulting, impact investing, and using data for global problem-solving.
     </p>
-  </section>
-
-  <section id="projects">
-    <h2>📊 Projects</h2>
-    <ul>
-      <li>
-        <strong>Deep Learning-Based Recommendation Engine</strong> (Sept 2025 - Present)<br>
-        Built a personalized deep learning recommender using neural collaborative filtering on the MovieLens dataset.
-        Integrated user-item embeddings and compared results against baseline collaborative filtering.
-      </li>
-      <li>
-        <strong>Podcast Aggregation Database</strong> (Feb 2024 - Apr 2024)<br>
-        Designed a SQL database system for podcast aggregation with an intuitive interface for exploring podcasts by genre and topic. Added a recommendation engine for personalized discovery.
-      </li>
-      <li>
-        <strong>Market Feasibility Analysis (STATA)</strong> (Mar 2023 - Jun 2023)<br>
-        Collected and analyzed 100+ surveys using STATA, visualized KPIs, and reduced mall opening costs by 15%.
-      </li>
-      <li>
-        <strong>Java Anagram Finder</strong> (Dec 2023)<br>
-        Implemented multiple data structures (BSTMap, AVLTreeMap, MyHashMap) to compare runtime performance for anagram search algorithms.
-      </li>
-    </ul>
   </section>
 
   <section id="education">
@@ -308,7 +286,30 @@
       </li>
     </ul>
   </section>
-
+  
+  <section id="projects">
+      <h2>📊 Projects</h2>
+      <ul>
+        <li>
+          <strong>Deep Learning-Based Recommendation Engine</strong> (Sept 2025 - Present)<br>
+          Built a personalized deep learning recommender using neural collaborative filtering on the MovieLens dataset.
+          Integrated user-item embeddings and compared results against baseline collaborative filtering.
+        </li>
+        <li>
+          <strong>Podcast Aggregation Database</strong> (Feb 2024 - Apr 2024)<br>
+          Designed a SQL database system for podcast aggregation with an intuitive interface for exploring podcasts by genre and topic. Added a recommendation engine for personalized discovery.
+        </li>
+        <li>
+          <strong>Market Feasibility Analysis (STATA)</strong> (Mar 2023 - Jun 2023)<br>
+          Collected and analyzed 100+ surveys using STATA, visualized KPIs, and reduced mall opening costs by 15%.
+        </li>
+        <li>
+          <strong>Java Anagram Finder</strong> (Dec 2023)<br>
+          Implemented multiple data structures (BSTMap, AVLTreeMap, MyHashMap) to compare runtime performance for anagram search algorithms.
+        </li>
+      </ul>
+    </section>
+  
     <section id="mini projects">
     <h2>📊 Data Science Projects</h2>
     <p>Here are some of the analytical projects I’ve worked on, combining Python, data visualization, and statistical modeling.</p>
@@ -342,13 +343,13 @@
       Generated <code>views</code> and <code>clicks</code> matrices where clicks followed a binomial distribution conditioned on user assignment, with probabilities 
       <code>p₀ = 0.05</code> (control) and <code>p₁ = 0.1</code> (treatment).</p>
       <p><strong>Metric:</strong> Defined each user's <strong>Click-Through Rate (CTR)</strong> as:</p>
-      <pre><code>CTRᵢ = ΣⱼCᵢⱼ / ΣⱼVᵢⱼ</code></pre>
+      <p>The click-through rate (CTR) for user \( i \) is defined as:</p>
+      <p>\\[ \text{CTR}_i = \frac{\sum_j C_{ij}}{\sum_j V_{ij}} \\]</p>
       <p>Computed CTRs for every user and stored them in a 1D NumPy array <code>CTR_array</code>.</p>
       <p><strong>Statistical Analysis:</strong> Conducted a two-sample <em>t-test</em> under equal variance assumption to test:</p>
-      <pre><code>
-H₀: CTRₜᵣₑₐₜₘₑₙₜ = CTRcₒₙₜᵣₒₗ  
-H₁: CTRₜᵣₑₐₜₘₑₙₜ ≠ CTRcₒₙₜᵣₒₗ
-      </code></pre>
+      <p>We test the following hypotheses:</p>
+      <p>\\( H_0: \text{CTR}_{\text{treatment}} = \text{CTR}_{\text{control}} \\)</p>
+      <p>\\( H_1: \text{CTR}_{\text{treatment}} \neq \text{CTR}_{\text{control}} \\)</p>
       <p>Implemented a <code>compute_t_statistics()</code> function to calculate the t-value and p-value using the <code>scipy.stats.t</code> distribution.</p>
       <p><strong>Key Insight:</strong> The treatment group (new UI design) showed a statistically significant improvement in CTR (p < 0.05), demonstrating the effectiveness of A/B testing in decision-making.</p>
     </div>
