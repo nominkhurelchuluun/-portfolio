@@ -46,10 +46,10 @@
       height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       color: white;
       overflow: hidden;
-      padding: 0 40px;
+      padding: 0 50px;
       box-sizing: border-box;
     }
 
@@ -63,7 +63,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      filter: blur(8px) brightness(65%);
+      filter: blur(4px) brightness(80%);
+      opacity: 0.6; 
       transform: scale(1.1);
       z-index: -2;
     }
@@ -226,21 +227,22 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" id="about">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Nomin Khurelchuluun</h1>
-        <h3>Undergraduate Student | Aspiring Data Scientist</h3>
-        <p>
-          Welcome to my portfolio! I’m passionate about leveraging data-driven insights 
-          to solve real-world challenges and make a positive impact. Explore my projects, 
-          experience, and journey below.
-        </p>
-      </div>
-      <img src="./profile.jpg" alt="Nomin Khurelchuluun" class="profile-pic">
+  <!-- HERO + ABOUT SECTION -->
+<section class="hero" id="about">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Hi, I’m Nomin Khurelchuluun</h1>
+      <h3>Undergraduate Student | Class of 2026</h3>
+      <p>
+        Welcome to my portfolio! I’m passionate about using data to understand problems and create solutions. Explore my projects, experience, and journey—I’m open to contributing in any field where I can make an impact. I am a Data Science undergraduate at Columbia University, graduating in May 2026. My work focuses on <strong>machine learning, data visualization, and predictive analytics</strong>. I enjoy uncovering insights through data and applying them to solve real-world challenges — especially in sustainable development, operations, and strategy.
+      </p>
     </div>
-  </section>
+    <div class="hero-image">
+      <img src="profile.png" alt="Nomin Khurelchuluun" class="profile-pic">
+    </div>
+  </div>
+</section>
+
 
   <header>
     <nav>
@@ -254,18 +256,6 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  
-  <section id="about">
-    <h2>🧑‍💻 About Me</h2>
-    <p>
-      I am a Data Science undergraduate at Columbia University, graduating in May 2026.
-      My work focuses on <strong>machine learning, data visualization, and predictive analytics</strong>.
-      I’m passionate about uncovering insights through data and applying them to solve real-world challenges — especially in sustainable development, operations, and strategy.
-    </p>
-    <p>
-      Outside academics, I’m interested in consulting, impact investing, and using data for global problem-solving.
-    </p>
-  </section>
 
   <section id="education">
     <h2>🎓 Education</h2>
