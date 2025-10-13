@@ -51,7 +51,7 @@
     .hero {
       position: relative;
       width: 100%;
-      height: 350px;/* full viewport width */
+      min-height: 100vh;/* full viewport width */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -92,9 +92,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 1300px;
+      /*max-width: 1300px;
       width: 100%;
-      height: 50vh;
+      height: 50vh;*/
       gap: 40px;
     }
 
@@ -217,6 +217,7 @@
       padding: 20px 16px;
     }
     .hero-content {
+      display: flex;
       flex-direction: column-reverse; /* image below text */
       align-items: center;
       gap: 20px;
@@ -228,6 +229,10 @@
     .profile-pic {
       width: 160px;
       height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
   </style>
