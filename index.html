@@ -43,7 +43,8 @@
     /* HERO SECTION */
     .hero {
       position: relative;
-      width: 100vw;                /* full viewport width */
+      width: 100%;
+      height: 400px;/* full viewport width */
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -58,12 +59,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
+      width: 100%;
       height: 100%;
       background-image: url("columbia-bg.jpg");
       background-size: cover;
       background-position: center;
-      filter: blur(0.2px) brightness(40%);
+      filter: blur(0.1px) brightness(20%);
       opacity: 0.6; 
       transform: scale(1.1);
       z-index: -2;
@@ -74,8 +75,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100vw;
-      height: 100%;
+      width: 100%;
+      height: 400px;
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
     }
@@ -84,7 +85,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 1300px;
+      /*max-width: 1300px;*/
       width: 100%;
       height: 100%;
       gap: 40px;
