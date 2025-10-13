@@ -51,15 +51,17 @@
     .hero {
       position: relative;
       max-width: 1300px;
-      width: 100%;
+      width: 100vw;
       min-height: 10vh;/* full viewport width */
       display: flex;
       align-items: center;
       justify-content: space-between;
       color: white;
-      padding: 0px 20px;
+      /*padding: 0px 20px;*/
       box-sizing: border-box;
       overflow: hidden;
+      padding: 0 0;        /* remove horizontal padding */
+      margin: 0;    
     }
 
     .hero::before {
@@ -67,7 +69,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
       height: 100%;
       background-image: url("columbia-bg.jpg");
       background-size: cover;
@@ -83,7 +85,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
       z-index: -1;
