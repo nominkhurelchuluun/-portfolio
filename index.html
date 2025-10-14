@@ -140,20 +140,22 @@
       align-items: center;   /* vertically center the image inside this column */
       justify-content: flex-end; /* push image to the far right of the column */
       height: 100%;
+      overflow: hidden;       /* ensures zoomed part is cropped */
+      border-radius: 10px; 
     }
     .profile-pic {
       width: 210px;
       height: 230px;
       object-fit: cover;
       object-position: 50% 30%;
-      transform: scale(1.2);
+      transform: scale(1.4);
       border: 2px solid #fff;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .profile-pic:hover {
-      transform: scale(1.35);
+      transform: scale(1.55);
       box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
     }
 
